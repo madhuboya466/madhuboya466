@@ -12,8 +12,8 @@
 I run and troubleshoot **Adobe Experience Manager** platforms: from the CDN edge down to the content repository. I started as an AEM developer (Java, Sling, OSGi, HTL) and now work on the platform side of **AEM as a Cloud Service**: Cloud Manager pipelines, Dispatcher, domains and certificates, access management, content migration and production incidents.
 
 ```text
-browser ─▶ cdn ─▶ dispatcher ─▶ publish ─▶ jcr        ◀── where I debug
-git ─▶ jenkins / maven ─▶ cloud manager ─▶ dev · stage · prod   ◀── how I ship
+debug:  browser → cdn → dispatcher → publish → jcr
+ship:   git → jenkins / maven → cloud manager → prod
 ```
 
 ### What I work on
