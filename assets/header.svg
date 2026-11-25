@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Madhu, AEM Platform Engineer: a request travelling Browser, CDN, Dispatcher, Publish, JCR">
+  <style>
+    .t{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#f2f3f5}
+    .s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#9aa3ad}
+    .n{font-family:Consolas,'SF Mono',Menlo,monospace;font-size:15px;fill:#f2f3f5}
+    .box{fill:#14181d;stroke:#39414a;stroke-width:1.5}
+    .hot{stroke:#ff3355}
+    .wire{stroke:#39414a;stroke-width:2}
+    .pulse{fill:#ff3355}
+    @keyframes run{0%{transform:translateX(0);opacity:0}6%{opacity:1}94%{opacity:1}100%{transform:translateX(860px);opacity:0}}
+    .pulse{animation:run 4.5s cubic-bezier(.45,.05,.55,.95) infinite}
+    @keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+    .live{animation:blink 2.2s ease-in-out infinite}
+    @media (prefers-reduced-motion:reduce){.pulse,.live{animation:none}}
+  </style>
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#1b2026" stroke-width="1"/></pattern>
+    <linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#0b0e12" stop-opacity="0"/><stop offset="1" stop-color="#0b0e12"/></linearGradient>
+  </defs>
+  <rect width="1200" height="300" rx="14" fill="#0b0e12"/>
+  <rect width="1200" height="300" rx="14" fill="url(#g)"/>
+  <rect x="0" y="0" width="8" height="300" fill="#ff3355"/>
+
+  <text x="60" y="88" class="t" font-size="50" font-weight="800">Madhu</text>
+  <text x="62" y="124" class="s" font-size="20">AEM Platform Engineer · AEM as a Cloud Service · DevOps · Production support</text>
+  <circle cx="1120" cy="62" r="6" fill="#3ddc84" class="live"/>
+  <text x="1104" y="67" class="s" font-size="14" text-anchor="end">keeping production green</text>
+
+  <g transform="translate(60,180)">
+    <line x1="60" y1="35" x2="980" y2="35" class="wire"/>
+    <g class="pulse"><circle cx="60" cy="35" r="7"/><circle cx="60" cy="35" r="14" opacity=".25"/></g>
+    <rect x="0" y="10" width="140" height="50" rx="8" class="box"/>
+    <text x="70" y="41" class="n" text-anchor="middle">browser</text>
+    <rect x="200" y="10" width="140" height="50" rx="8" class="box hot"/>
+    <text x="270" y="41" class="n" text-anchor="middle">cdn</text>
+    <rect x="400" y="10" width="160" height="50" rx="8" class="box hot"/>
+    <text x="480" y="41" class="n" text-anchor="middle">dispatcher</text>
+    <rect x="620" y="10" width="140" height="50" rx="8" class="box"/>
+    <text x="690" y="41" class="n" text-anchor="middle">publish</text>
+    <rect x="820" y="10" width="140" height="50" rx="8" class="box"/>
+    <text x="890" y="41" class="n" text-anchor="middle">jcr</text>
+    <text x="0" y="90" class="s" font-size="13">GET /content/site/en.html</text>
+    <text x="960" y="90" class="s" font-size="13" text-anchor="end">200 OK · cache HIT</text>
+  </g>
+</svg>
